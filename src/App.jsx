@@ -1,9 +1,9 @@
-import Titulo from "./components/Titulo";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-    <Titulo/>
+    <NavBar/>
     </>
   );
 }
