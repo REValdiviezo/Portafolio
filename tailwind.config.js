@@ -7,6 +7,10 @@ module.exports = {
     "./components/**/*.{html,js}",
   ],
   theme: {
+    fontFamily:{
+      "inter": ['Inter'],
+      "playpen": ['Playpen Sans']
+    },
     screens: {
       sm: '640px',
       md: '768px',
