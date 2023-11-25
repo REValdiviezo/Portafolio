@@ -1,6 +1,6 @@
 const NavBar = () => {
   return (
-    <div className='h-12 flex justify-between items-center font-inter font-bold'>
+    <div className='bg-blue-500 h-12 flex justify-between items-center font-inter font-bold'>
         <div className='h-14 ml-10'>
           <h1 className='text-blue-700 text-[35px] '>EV</h1>
         </div>
