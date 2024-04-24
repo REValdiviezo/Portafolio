@@ -2,7 +2,7 @@ import img from "../assets/imgSobremi.png"
 
 const SobreMi = () => {
     return(
-        <div className="h-4/5 flex items-center font-bold justify-evenly">
+        <div className="h-screen flex items-center font-bold justify-evenly">
             <div className="max-w-xl ml-24">
                 <h2 className="text-[70px] font-inter">Sobre mi</h2>
                 <p className="leading-tight text-xl">Soy un Desarrollador Frontend, con una sólida formación en tecnologías web modernas y una pasión por el aprendizaje continuo y autodidacta, estoy listo para contribuir y crecer en el emocionante mundo del desarrollo web.
