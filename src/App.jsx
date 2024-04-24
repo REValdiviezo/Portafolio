@@ -5,12 +5,12 @@ import Proyectos from "./components/Proyectos";
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar/>
       <Titulo/>
       <SobreMi/>
       <Proyectos/>
-    </div>
+    </>
   );
 }
 

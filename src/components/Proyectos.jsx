@@ -31,7 +31,7 @@ const Projectos = () => {
   return (
     <section className="h-screen">
       <div className="container mx-auto px-4 flex flex-col items-center">
-        <h2 className="text-5xl font-semibold mb-10 text-center">Proyectos</h2>
+        <h2 className="text-[70px] font-semibold mb-10">Proyectos</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center w-[900px]">
           {projects.map((project) => (
             <div key={project.id} className="bg-gray-800 w-[400px] rounded-lg shadow-lg overflow-hidden">
