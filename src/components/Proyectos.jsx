@@ -1,30 +1,40 @@
+import { Link } from 'react-router-dom';
 
 
-const Projectos = () => {
+
+const Proyectos = () => {
   const projects = [
     {
       id: 1,
       title: 'Libreria Digital',
       description: 'Permite al usuario Comprar, Vender, Alquilar, Leer y Escuchar una gran variedad de libros y ser parte de una comunidad',
       imageUrl: 'https://via.placeholder.com/300',
+      deployUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/',
+      githubUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/'
     },
     {
       id: 2,
       title: 'Explorador de Paises',
       description: 'Puedes ver informacion detallada de cada pais del mundo y tener una experiencia dinamica al aplicar filtros a tus busquedas',
       imageUrl: 'https://via.placeholder.com/300',
+      deployUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/',
+      githubUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/'
     },
     {
       id: 3,
       title: 'Rick and Morty',
       description: 'Puedes ver todos los personajes de la famosa serie de TV y agregar algunos a tu seccion de favoritos',
       imageUrl: 'https://via.placeholder.com/300',
+      deployUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/',
+      githubUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/'
     },
     {
       id: 4,
       title: 'Lista de Tareas',
       description: 'Te permite registrar tareas que tengas pendiente, modificarlas o eliminarlas cuando las hayas cumplido',
       imageUrl: 'https://via.placeholder.com/300',
+      deployUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/',
+      githubUrl: 'https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/'
     },
   ];
 
@@ -43,6 +53,10 @@ const Projectos = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-withe mb-2">{project.title}</h3>
                 <p className="text-withe">{project.description}</p>
+                <div className="flex mt-4">
+                  <Link to={project.deployUrl} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded mr-2">Despliegue</Link>
+                  <Link to={project.githubUrl} target="_blank" className="bg-gray-600 hover:bg-gray-700 text-white font-semibold px-4 py-2 rounded">GitHub</Link>
+                </div>
               </div>
             </div>
           ))}
@@ -52,4 +66,4 @@ const Projectos = () => {
   );
 };
 
-export default Projectos;
+export default Proyectos;
