@@ -39,30 +39,28 @@ const Proyectos = () => {
   ];
 
   return (
-    <section className="h-screen">
-      <div className="container mx-auto px-4 flex flex-col items-center">
-        <h2 className="text-[70px] font-semibold mb-10">Proyectos</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center w-[900px]">
-          {projects.map((project) => (
-            <div key={project.id} className="bg-gray-800 w-[400px] rounded-lg shadow-lg overflow-hidden">
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="w-full h-60 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-withe mb-2">{project.title}</h3>
-                <p className="text-withe">{project.description}</p>
-                <div className="flex mt-4">
-                  <Link to={project.deployUrl} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded mr-2">Despliegue</Link>
-                  <Link to={project.githubUrl} target="_blank" className="bg-gray-600 hover:bg-gray-700 text-white font-semibold px-4 py-2 rounded">GitHub</Link>
-                </div>
+    <div className="h-auto mx-auto px-4 flex flex-col items-center">
+      <h2 className="text-[70px] font-semibold mb-10">Proyectos</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center w-[900px]">
+        {projects.map((project) => (
+          <div key={project.id} className="bg-gray-800 w-[400px] rounded-lg shadow-lg overflow-hidden">
+            <img
+              src={project.imageUrl}
+              alt={project.title}
+              className="w-full h-60 object-cover object-center"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-withe mb-2">{project.title}</h3>
+              <p className="text-withe">{project.description}</p>
+              <div className="flex mt-4">
+                <Link to={project.deployUrl} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded mr-2">Despliegue</Link>
+                <Link to={project.githubUrl} target="_blank" className="bg-gray-600 hover:bg-gray-700 text-white font-semibold px-4 py-2 rounded">GitHub</Link>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
