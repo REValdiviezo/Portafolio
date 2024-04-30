@@ -5,6 +5,7 @@ import SobreMi from "./components/SobreMi";
 import Proyectos from "./components/Proyectos";
 import Contacto from './components/Contacto';
 import Tecnologias from './components/Tecnologias';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <SobreMi />
         <Proyectos />
         <Contacto/>
+        <Footer/>
     </Router>
   );
 }
