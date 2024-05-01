@@ -10,15 +10,17 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(0, 0, 0, 0.973);
+    background-color: rgba(19, 23, 61, 0.973);
     color: white;
     max-width: 1000px;
     margin: 0px auto;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .slide-track {
-	animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
+	animation: scroll 45s linear infinite;
+    -webkit-animation: scroll 45s linear infinite;
     width: calc(200px * 28);
 }
 @keyframes scroll {

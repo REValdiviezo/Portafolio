@@ -39,7 +39,7 @@ const Proyectos = () => {
   ];
 
   return (
-    <div className="h-auto mx-auto px-4 flex flex-col items-center">
+    <div id='proyectos' className="h-auto mx-auto px-4 flex flex-col items-center">
       <h2 className="text-[70px] font-semibold mb-10">Proyectos</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center w-[900px]">
         {projects.map((project) => (

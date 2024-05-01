@@ -21,7 +21,7 @@ const Contacto = () => {
   };
 
   return (
-    <div className='h-screen flex flex-col justify-center items-center'>
+    <div id='contacto' className='h-screen flex flex-col justify-center items-center'>
       <h2 className='text-[70px] -mt-20'>Contacto</h2>
       <form
         ref={refForm}
