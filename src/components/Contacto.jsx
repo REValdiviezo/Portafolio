@@ -22,20 +22,21 @@ const Contacto = () => {
 
   return (
     <div id='contacto' className='h-screen flex flex-col justify-center items-center'>
-      <h2 className='text-[70px] -mt-20'>Contacto</h2>
+      <h2 className='text-[70px]'>Contacto</h2>
       <form
         ref={refForm}
-        action=''
         onSubmit={handleSubmit}
-        className='flex flex-col w-80 border-2 mt-20 py-7 px-4'
+        className='flex flex-col w-80 mt-5 py-7 px-4 rounded-2xl bg-gradient-to-tr from-bootomBlue to-topBlue'
       >
-        <label htmlFor=''>Nombre:</label>
-        <input type='text' name='userName' className='text-black' required />
-        <label htmlFor=''>Email:</label>
-        <input type='email' name='email' className='text-black' required />
-        <label htmlFor=''>Mensaje:</label>
-        <input type='text' name='message' className='text-black' required />
-        <button>Enviar</button>
+        <label>Nombre:</label>
+        <input type='text' name='userName' className='text-black mb-5 bg-[#13173DF1] border-none focus:outline-none' required />
+        <label>Email:</label>
+        <input type='email' name='email' className='text-black mb-5 bg-[#13173DF1] border-none focus:outline-none' required />
+        <label>Mensaje:</label>
+        <textarea type='text' name='message' className='text-black mb-5 bg-[#13173DF1] border-none focus:outline-none' required />
+        <div className='flex justify-center'>
+          <button className='bg-blue-800 font-bold w-16 rounded-md border-none'>Enviar</button>
+        </div>
       </form>
     </div>
   );

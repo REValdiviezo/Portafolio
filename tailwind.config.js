@@ -17,7 +17,12 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        bootomBlue: '#2B366C80',
+        topBlue: '#285A8C',
+      }
+    },
   },
   plugins: [    require('@tailwindcss/forms'),
   require('@tailwindcss/aspect-ratio'),],
