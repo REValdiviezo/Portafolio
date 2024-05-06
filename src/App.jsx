@@ -6,10 +6,12 @@ import Proyectos from './components/Proyectos';
 import Contacto from './components/Contacto';
 import Tecnologias from './components/Tecnologias';
 import Footer from './components/Footer';
+import TopButton from './components/TopButton';
+
 
 function App() {
   return (
-    <Router>
+    <Router >
       <NavBar />
       <Titulo />
       <Tecnologias />
@@ -17,6 +19,7 @@ function App() {
       <Proyectos />
       <Contacto />
       <Footer />
+      <TopButton/>
     </Router>
   );
 }
