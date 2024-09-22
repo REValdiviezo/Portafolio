@@ -15,8 +15,8 @@ function App() {
       <NavBar />
       <Titulo />
       <Tecnologias />
-      <SobreMi />
       <Proyectos />
+      <SobreMi />
       <Contacto />
       <Footer />
       <TopButton/>

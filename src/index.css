@@ -9,9 +9,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgba(19, 23, 61, 0.945);
-    color: white;
+:root {
+    --bg-color: linear-gradient(to bottom, rgb(22, 27, 78) 0%, rgb(12, 15, 44) 20%);
+    --text-color: rgb(238, 237, 237);
+}
+
+.dark-mode {
+    --bg-color: linear-gradient(to bottom, rgb(216, 212, 212) 0%, rgb(230, 230, 243) 20%);
+    --text-color: rgb(22, 27, 78);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
     max-width: 1000px;
     margin: 0px auto;
 }
@@ -19,8 +29,8 @@ html {
     scroll-behavior: smooth;
 }
 .slide-track {
-	animation: scroll 45s linear infinite;
-    -webkit-animation: scroll 45s linear infinite;
+	animation: scroll 55s linear infinite;
+    -webkit-animation: scroll 55s linear infinite;
     width: calc(200px * 28);
 }
 @keyframes scroll {
