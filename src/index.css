@@ -15,15 +15,13 @@
 }
 
 .dark-mode {
-    --bg-color: linear-gradient(to bottom, rgb(216, 212, 212) 0%, rgb(230, 230, 243) 20%);
+    --bg-color: linear-gradient(to bottom, rgb(228, 226, 226) 0%, rgb(244, 244, 247) 20%);
     --text-color: rgb(22, 27, 78);
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    max-width: 1000px;
-    margin: 0px auto;
 }
 html {
     scroll-behavior: smooth;

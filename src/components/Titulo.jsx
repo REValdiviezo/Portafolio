@@ -24,25 +24,29 @@ const Titulo = () => {
     };
 
     return (
-        <div id="inicio" className="h-screen flex items-center justify-evenly font-bold">
-            <div className="max-w-xl pl-5">
+        <div id="inicio" className="w-full flex flex-col-reverse lg:flex-row items-center justify-evenly font-bold px-5 py-20">
+            <div className="max-w-xl lg:pl-5 text-center lg:text-left mt-10 lg:mt-0">
                 <h2>👋 Hola, soy</h2>
-                <h1 className="text-[55px] font-playpen"><b className="text-[#366bfd]">Ezequiel Valdiviezo</b></h1>
-                <h3 className="text-[30px] mb-3 -mt-2 font-inter">Frontend Developer</h3>
-                <p className="font-inter mb-5">Desarrollador web en constante búsqueda de innovaciones para crear soluciones que marcan la diferencia.</p>
-                <div className="flex items-center">
-                    <button className="bg-[#366bfd] hover:bg-blue-800 flex text-[#e6f3ff] text-[20px] px-3 mr-4 py-1 rounded-xl font-inter font-extrabold"><a href="/Doc_CV.pdf" download className="text-sm mr-2">Descargar CV</a><FiDownload /></button>
-                    <a href="https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/" target="_blank" className="text-2xl mr-2 text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaLinkedin/></a>
-                    <a href="https://github.com/REValdiviezo" target="_blank" className="text-2xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaGithubSquare/></a>
-                    <div className="flex flex-row justify-center items-center relative">
-                        <div className="ml-3 mr-1 border-2 border-[#366bfd] rounded-xl px-2 text-[14px]">ezequielrvaldiviezo@gmail.com</div>
-                        <button onClick={() => copyToClipboard("ezequielrvaldiviezo@gmail.com")} className="bg-[#366bfd] hover:bg-blue-800 text-white text-[17px] w-8 h-6 pl-2 mr-2 rounded-lg font-extrabold"><GoCopy /></button>
-                        {copied && <span className="text-xs text-green-500 absolute left-72">Copiado!</span>}
+                <h1 className="text-[40px] lg:text-[55px] font-playpen"><b className="text-[#366bfd]">Ezequiel Valdiviezo</b></h1>
+                <h3 className="text-[24px] lg:text-[30px] mb-3 -mt-2 font-inter">Desarrollador Frontend</h3>
+                <p className="font-inter mb-5 text-sm lg:text-base">Apasionado por la tecnología, siempre en busca de nuevos desafíos que impulsen la creación de soluciones efectivas en el entorno digital.</p>
+                <div className="flex flex-col lg:flex-row items-center">
+                    <button className="bg-[#366bfd] hover:bg-blue-800 flex items-center text-[#e6f3ff] text-[16px] lg:text-[20px] px-3 mr-0 lg:mr-4 mb-4 lg:mb-0 py-2 rounded-xl font-inter font-extrabold">
+                        <a href="/Doc_CV.pdf" download className="text-sm mr-2">Descargar CV</a><FiDownload />
+                    </button>
+                    <div className="flex space-x-3 lg:space-x-2">
+                        <a href="https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/" target="_blank" className="text-xl lg:text-2xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaLinkedin /></a>
+                        <a href="https://github.com/REValdiviezo" target="_blank" className="text-xl lg:text-2xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaGithubSquare /></a>
+                    </div>
+                    <div className="flex flex-row justify-center items-center relative mt-4 lg:mt-0">
+                        <div className="ml-3 mr-1 border-2 border-[#366bfd] rounded-xl px-2 text-[12px] lg:text-[14px]">ezequielrvaldiviezo@gmail.com</div>
+                        <button onClick={() => copyToClipboard("ezequielrvaldiviezo@gmail.com")} className="bg-[#366bfd] hover:bg-blue-800 text-white text-[14px] lg:text-[17px] w-8 h-6 pl-2 mr-2 rounded-lg font-extrabold"><GoCopy /></button>
+                        {copied && <span className="text-xs text-green-500 absolute left-20 lg:left-72">Copiado!</span>}
                     </div>
                 </div>
             </div>
-            <div className="-mr-14">
-                <img src={img2} alt="" className="w-[380px]"/>
+            <div className="hidden lg:block -mr-14">
+                <img src={img2} alt="" className="w-[280px] md:w-[380px]" />
             </div>
         </div>
     );

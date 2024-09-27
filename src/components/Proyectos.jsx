@@ -52,11 +52,11 @@ const Proyectos = () => {
   ];
 
   return (
-    <div id='proyectos' className="h-auto mx-auto px-4 flex flex-col items-center">
+    <div id='proyectos' className="h-auto w-screen mx-auto px-4 flex flex-col items-center">
       <h2 className="text-[50px] font-inter font-bold mb-10">Proyectos</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center w-[900px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center ">
         {projects.map((project) => (
-          <div key={project.id} className="bg-gray-800 w-[400px] rounded-lg shadow-lg overflow-hidden">
+          <div key={project.id} className="bg-gray-800 w-[350px] rounded-lg shadow-lg overflow-hidden">
             <img
               src={project.imageUrl}
               alt={project.title}
