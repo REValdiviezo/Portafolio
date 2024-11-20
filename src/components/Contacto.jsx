@@ -44,12 +44,12 @@ const Contacto = () => {
   };
 
   return (
-    <div id='contacto' className='h-screen w-full flex flex-col justify-center items-center'>
-      <h2 className='text-[50px] font-inter font-bold'>Contacto</h2>
+    <div id='contacto' className='w-full flex flex-col justify-center items-center my-20'>
+      <h2 className='text-[40px] font-inter font-bold'>Contacto</h2>
       <form
         ref={refForm}
         onSubmit={handleSubmit}
-        className='flex flex-col mt-5 py-7 px-4 rounded-2xl bg-gradient-to-tr from-bootomBlue to-topBlue'
+        className='w-72 flex flex-col mt-5 py-7 px-4 rounded-2xl bg-gradient-to-tr from-bootomBlue to-topBlue'
       >
         <label className='font-bold'>Nombre:</label>
         <input type='text' name='userName' placeholder='Ej: Ezequiel Valdiviezo' className='mb-5 mt-1 texr-white bg-[#13173DF1] border-none rounded-md' required />

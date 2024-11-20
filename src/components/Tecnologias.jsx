@@ -32,9 +32,9 @@ const tecnologias = [
 
 const Tecnologias = () => {
   return (
-    <div className='w-full xl:w-3/4 h-auto m-auto mb-32'>
-      <h2 className="text-[50px] text-center font-inter font-bold mb-10">Habilidades Tecnicas</h2>
-      <div className='flex flex-wrap gap-10'>
+    <div id='tecnologias' className='w-full xl:w-10/12 h-auto m-auto mb-32'>
+      <h2 className="text-[40px] text-center font-inter font-bold mb-10">Tecnologías</h2>
+      <div className='flex flex-wrap gap-10 px-10 justify-center'>
         {tecnologias.map((tech, index) => (
           <div key={index} className='w-[100px]'>
             <img className='w-24 h-24 px-3' src={tech.src} alt={tech.name} />

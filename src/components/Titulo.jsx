@@ -24,7 +24,7 @@ const Titulo = () => {
     };
 
     return (
-        <div id="inicio" className="w-full flex flex-col-reverse lg:flex-row items-center justify-evenly font-bold px-5 py-20">
+        <div id="inicio" className="w-full h-screen flex flex-col-reverse lg:flex-row items-center justify-evenly font-bold px-5">
             <div className="max-w-xl lg:pl-5 text-center lg:text-left mt-10 lg:mt-0">
                 <h2>👋 Hola, soy</h2>
                 <h1 className="text-[40px] lg:text-[55px] font-playpen"><b className="text-[#366bfd]">Ezequiel Valdiviezo</b></h1>
@@ -38,10 +38,10 @@ const Titulo = () => {
                         <a href="https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/" target="_blank" className="text-xl lg:text-2xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaLinkedin /></a>
                         <a href="https://github.com/REValdiviezo" target="_blank" className="text-xl lg:text-2xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaGithubSquare /></a>
                     </div>
-                    <div className="flex flex-row justify-center items-center relative mt-4 lg:mt-0">
+                    <div className="flex flex-row justify-center items-center relative mt-4 lg:mt-0 :bg-red-600">
                         <div className="ml-3 mr-1 border-2 border-[#366bfd] rounded-xl px-2 text-[12px] lg:text-[14px]">ezequielrvaldiviezo@gmail.com</div>
                         <button onClick={() => copyToClipboard("ezequielrvaldiviezo@gmail.com")} className="bg-[#366bfd] hover:bg-blue-800 text-white text-[14px] lg:text-[17px] w-8 h-6 pl-2 mr-2 rounded-lg font-extrabold"><GoCopy /></button>
-                        {copied && <span className="text-xs text-green-500 absolute left-20 lg:left-72">Copiado!</span>}
+                        {copied && <span className="text-xs text-green-500 absolute top-8 sm:left-64 sm:top-1 md:left-64 lg:left-72">Copiado!</span>}
                     </div>
                 </div>
             </div>

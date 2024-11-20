@@ -31,8 +31,9 @@ const NavBar = () => {
         <h1 className="text-3xl">EV</h1>
       </div>
 
-      <div className="hidden md:flex h-12 w-80 items-center justify-around mr-14">
+      <div className="hidden md:flex h-12 w-[440px] items-center justify-between">
         <a href="#inicio" className="hover:text-[#366bfd]">Inicio</a>
+        <a href="#tecnologias" className="hover:text-[#366bfd]">Tecnologías</a>
         <a href="#proyectos" className="hover:text-[#366bfd]">Proyectos</a>
         <a href="#sobre-mi" className="hover:text-[#366bfd]">Sobre mí</a>
         <a href="#contacto" className="hover:text-[#366bfd]">Contacto</a>
@@ -51,6 +52,7 @@ const NavBar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-14 right-0 bg-gray-800 text-white w-full flex flex-col items-center space-y-4 py-4">
           <a href="#inicio" className="hover:text-[#366bfd]" onClick={toggleMenu}>Inicio</a>
+          <a href="#tecnologias" className="hover:text-[#366bfd]" onClick={toggleMenu}>Tecnologías</a>
           <a href="#proyectos" className="hover:text-[#366bfd]" onClick={toggleMenu}>Proyectos</a>
           <a href="#sobre-mi" className="hover:text-[#366bfd]" onClick={toggleMenu}>Sobre mí</a>
           <a href="#contacto" className="hover:text-[#366bfd]" onClick={toggleMenu}>Contacto</a>
