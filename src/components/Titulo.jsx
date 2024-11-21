@@ -35,11 +35,11 @@ const Titulo = () => {
                         <a href="/Doc_CV.pdf" download className="text-sm mr-2">Descargar CV</a><FiDownload />
                     </button>
                     <div className="flex space-x-3 lg:space-x-2">
-                        <a href="https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/" target="_blank" className="text-xl lg:text-2xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaLinkedin /></a>
-                        <a href="https://github.com/REValdiviezo" target="_blank" className="text-xl lg:text-2xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaGithubSquare /></a>
+                        <a href="https://www.linkedin.com/in/ezequiel-valdiviezo-987582247/" target="_blank" className="text-3xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaLinkedin /></a>
+                        <a href="https://github.com/REValdiviezo" target="_blank" className="text-3xl text-[#366bfd] hover:text-blue-800" rel="noreferrer"><FaGithubSquare /></a>
                     </div>
                     <div className="flex flex-row justify-center items-center relative mt-4 lg:mt-0 :bg-red-600">
-                        <div className="ml-3 mr-1 border-2 border-[#366bfd] rounded-xl px-2 text-[12px] lg:text-[14px]">ezequielrvaldiviezo@gmail.com</div>
+                        <div className="ml-3 mr-1 border-2 border-[#366bfd] rounded-xl px-2 text-[15px] lg:text-[15px]">ezequielrvaldiviezo@gmail.com</div>
                         <button onClick={() => copyToClipboard("ezequielrvaldiviezo@gmail.com")} className="bg-[#366bfd] hover:bg-blue-800 text-white text-[14px] lg:text-[17px] w-8 h-6 pl-2 mr-2 rounded-lg font-extrabold"><GoCopy /></button>
                         {copied && <span className="text-xs text-green-500 absolute top-8 sm:left-64 sm:top-1 md:left-64 lg:left-72">Copiado!</span>}
                     </div>

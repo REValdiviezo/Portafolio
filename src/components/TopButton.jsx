@@ -30,7 +30,7 @@ const TopButton = () => {
 
     return (
         <button
-            className={`text-[30px] fixed bottom-4 right-4 text-white px-4 py-2 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            className={`text-[30px] fixed bottom-4 right-4 text-[#366bfd] px-4 py-2 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             onClick={scrollToTop}
         >
             <FaArrowCircleUp />

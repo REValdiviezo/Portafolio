@@ -37,7 +37,7 @@ const Tecnologias = () => {
       <div className='flex flex-wrap gap-10 px-10 justify-center'>
         {tecnologias.map((tech, index) => (
           <div key={index} className='w-[100px]'>
-            <img className='w-24 h-24 px-3' src={tech.src} alt={tech.name} />
+            <img className='w-28 h-28 px-3' src={tech.src} alt={tech.name} />
             <h3 className='text-center font-bold mt-2'>{tech.name}</h3>
           </div>
         ))}
