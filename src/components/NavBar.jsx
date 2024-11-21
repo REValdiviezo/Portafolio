@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa6";
 import { FaBars, FaTimes } from "react-icons/fa";
+import MarcaB from "../assets/Marca-B.png"
+import MarcaA from "../assets/Marca-A.png"
 
 const NavBar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,8 +29,12 @@ const NavBar = () => {
 
   return (
     <div className="fixed top-0 z-10 w-full backdrop-blur-2xl h-14 flex justify-between items-center font-inter font-bold px-20">
-      <div className="h-12 pt-2">
-        <h1 className="text-3xl">EV</h1>
+      <div>
+        <img 
+          src={darkMode ? MarcaA : MarcaB} 
+          alt="Marca" 
+          className="size-12" 
+        />
       </div>
 
       <div className="hidden md:flex h-12 w-[440px] items-center justify-between">
