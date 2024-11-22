@@ -6,9 +6,10 @@ const TopButton = () => {
 
     // Manejar el desplazamiento de la página
     const scrollToTop = () => {
+        window.location.hash = '#inicio';
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
     };
 

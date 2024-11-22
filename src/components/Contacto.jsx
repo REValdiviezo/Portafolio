@@ -52,13 +52,13 @@ const Contacto = () => {
         className='w-72 flex flex-col mt-5 py-7 px-4 rounded-2xl bg-gradient-to-tr from-bootomBlue to-topBlue'
       >
         <label className='font-bold'>Nombre:</label>
-        <input type='text' name='userName' placeholder='Ej: Ezequiel Valdiviezo' className='mb-5 mt-1 texr-white bg-[#13173DF1] border-none rounded-md' required />
+        <input type='text' name='userName' placeholder='Ej: Ezequiel Valdiviezo' className='mb-5 mt-1 text-white bg-[#13173DF1] border-none rounded-md' required />
         <label className='font-bold'>Email:</label>
-        <input type='email' name='email' placeholder='Ej: ejemplo@gmail.com' className='mb-5 mt-1 placeholder: bg-[#13173DF1] border-none rounded-md' required />
+        <input type='email' name='email' placeholder='Ej: ejemplo@gmail.com' className='mb-5 mt-1 text-white bg-[#13173DF1] border-none rounded-md' required />
         <label className='font-bold'>Mensaje:</label>
-        <textarea type='text' name='message' placeholder='' className='mb-5 mt-1 placeholder: bg-[#13173DF1] border-none rounded-md' required />
+        <textarea type='text' name='message' placeholder='' className='mb-5 mt-1 text-white bg-[#13173DF1] border-none rounded-md' required />
         <div className='flex justify-center'>
-          <button className='font-bold w-32 h-8 rounded-md border-none bg-gradient-to-br bg-[#366bfd] to-blue-200 hover:bg-blue-800'>Enviar</button>
+          <button className='font-bold w-32 h-8 rounded-md border-none text-white bg-gradient-to-br bg-[#366bfd] to-blue-200 hover:bg-blue-800'>Enviar</button>
         </div>
       </form>
     </div>
